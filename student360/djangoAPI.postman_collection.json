@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "1ba6fbf1-e00a-4c8e-a17e-266d0b78893c",
+		"name": "djangoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetchAllStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/add/student?page=1&limit=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add",
+						"student"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Student test\",\r\n    \"gender\": \"Male\",\r\n    \"standard\": \"iii\",\r\n    \"section\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/add/student/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add",
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudentMarks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentRollNo\": 10017,\r\n    \"english\": 60,\r\n    \"science\": 48,\r\n    \"maths\": 35,\r\n    \"computer\": 90,\r\n    \"social\": 80\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/student/marks/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"student",
+						"marks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStudentMarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/student/marks/?page=1&limit=20&searchType=student",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"student",
+						"marks",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "searchType",
+							"value": "student"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "averageMarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/average/marks/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"average",
+						"marks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllStudentMarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/student/marks/?page=1&limit=20&searchType=student",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"student",
+						"marks",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "searchType",
+							"value": "student"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTotalMarks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/student/marks/?page=1&limit=20&searchType=totalmarks",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"student",
+						"marks",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "20"
+						},
+						{
+							"key": "searchType",
+							"value": "totalmarks"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
